@@ -2,11 +2,56 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Cole Patten</title>
+    <title>Patten - Lab 10</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
 </head>
 <body>
-    <main>
-      <p>Hello world</p>
+    <main class="col-sm-6 mx-auto text-center mt-3 border">
+        <h1>Account Profile</h1>
+        <hr>
+        <div class="form-group row">
+            <label for="username" class="col-form-label col-sm-4">Username:</label>
+            <div class="col-sm-8">
+                <input type="text" class="form-control" id="username" name="username" placeholder="only letters, numbers, periods, hyphens, and underscores">
+                <small class="text-danger font-weight-bold"></small>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="email" class="col-form-label col-sm-4">Email Address:</label>
+            <div class="col-sm-8">
+                <input type="text" class="form-control" id="email" name="email" placeholder="must end in .edu">
+                <small class="text-danger font-weight-bold"></small>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="phone" class="col-form-label col-sm-4">Phone Number:</label>
+            <div class="col-sm-8">
+                <input type="text" class="form-control" id="phone" name="phone" placeholder="(999)999-9999">
+                <small class="text-danger font-weight-bold"></small>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="zip" class="col-form-label col-sm-4">Zip-Code:</label>
+            <div class="col-sm-8">
+                <input type="text" class="form-control" id="zip" name="zip" placeholder="99999-9999">
+                <small class="text-danger font-weight-bold"></small>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="birth" class="col-form-label col-sm-4">Date of Birth:</label>
+            <div class="col-sm-8">
+                <input type="text" class="form-control" id="birth" name="birth" placeholder="MM/DD/YYYY">
+                <small class="text-danger font-weight-bold"></small>
+            </div>
+        </div>
+        <div class="mx-auto w-50 mt-3">
+            <div class="form-group">
+                <input type="submit" class="btn btn-primary w-100 mb-1" id="validate" value="Validate">
+            </div>
+            <p class="alert-success font-weight-bold" id="results"></p>
+        </div>
     </main>
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="patten-lab-10.js"></script>
 </body>
 </html>
