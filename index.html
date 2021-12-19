@@ -2,56 +2,47 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Patten - Lab 10</title>
-    <link rel="stylesheet" href="bootstrap.min.css">
+    <title>Patten - Lab 9 - Schedule</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="jquery-ui.min.css">
+
 </head>
 <body>
-    <main class="col-sm-6 mx-auto text-center mt-3 border">
-        <h1>Account Profile</h1>
-        <hr>
-        <div class="form-group row">
-            <label for="username" class="col-form-label col-sm-4">Username:</label>
-            <div class="col-sm-8">
-                <input type="text" class="form-control" id="username" name="username" placeholder="only letters, numbers, periods, hyphens, and underscores">
-                <small class="text-danger font-weight-bold"></small>
-            </div>
+
+    <h1>Cole Patten Fall 2021</h1>
+    <div id="accordion">
+        <h3>CSC334 - Web Development</h3>
+        <div>
+            <p>Students will develop the skills necessary to prototype, design, test, and deploy web applications using modern frameworks and technologies. Development of applications that are RESTful is emphasized, but other communication structures may be explored. Security, scalability, user experience, and accessibility are additional considerations of delivering these pieces of software that will be analyzed.</p>
         </div>
-        <div class="form-group row">
-            <label for="email" class="col-form-label col-sm-4">Email Address:</label>
-            <div class="col-sm-8">
-                <input type="text" class="form-control" id="email" name="email" placeholder="must end in .edu">
-                <small class="text-danger font-weight-bold"></small>
-            </div>
+        <h3>MATH321 - Differential Equations</h3>
+        <div>
+            <p>Selected topics from ordinary differential equations including development and applications of first order, higher order linear and systems of linear equations, general solutions and solutions to initial-value problems using matrices. Additional topics may include Laplace transforms and power series solutions.</p>
         </div>
-        <div class="form-group row">
-            <label for="phone" class="col-form-label col-sm-4">Phone Number:</label>
-            <div class="col-sm-8">
-                <input type="text" class="form-control" id="phone" name="phone" placeholder="(999)999-9999">
-                <small class="text-danger font-weight-bold"></small>
-            </div>
+        <h3>MATH401 - Senior Capstone</h3>
+        <div>
+            <p>Two semester course: In the first semester, students will carry out activities which are designed to refresh mathematics skills and develop skills such as research, writing, and presenting which will prepare them for the second semester in which they will write a major paper under faculty supervision and give a presentation based on that paper.</p>
         </div>
-        <div class="form-group row">
-            <label for="zip" class="col-form-label col-sm-4">Zip-Code:</label>
-            <div class="col-sm-8">
-                <input type="text" class="form-control" id="zip" name="zip" placeholder="99999-9999">
-                <small class="text-danger font-weight-bold"></small>
-            </div>
+        <h3>MATH515 - Advanced Linear Algebra</h3>
+        <div>
+            <p>Advanced topics in linear algebra.  This course may cover topics useful in such applications as matrix factorizations, finite element methods, multivariable statistics, stochastic models, and parallel programming for scientific computations.</p>
         </div>
-        <div class="form-group row">
-            <label for="birth" class="col-form-label col-sm-4">Date of Birth:</label>
-            <div class="col-sm-8">
-                <input type="text" class="form-control" id="birth" name="birth" placeholder="MM/DD/YYYY">
-                <small class="text-danger font-weight-bold"></small>
-            </div>
+        <h3>STAT684 - Statistical Inference I</h3>
+        <div>
+            <p>A theoretical study of the foundations of statistics, including probability, random variables, expectations, moment generating functions, sample theory, and limiting distributions.</p>
         </div>
-        <div class="mx-auto w-50 mt-3">
-            <div class="form-group">
-                <input type="submit" class="btn btn-primary w-100 mb-1" id="validate" value="Validate">
-            </div>
-            <p class="alert-success font-weight-bold" id="results"></p>
-        </div>
-    </main>
+    </div>
+
     <script src="jquery-3.5.1.min.js"></script>
-    <script src="patten-lab-10.js"></script>
+    <script src="jquery-ui.min.js"></script>
+    <script>
+        $(document).ready( () => {
+            $("#accordion").accordion({
+                heightStyle: "content",
+                collapsible: true
+            });
+        });
+    </script>
+
 </body>
 </html>
